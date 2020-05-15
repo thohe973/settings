@@ -1,0 +1,59 @@
+{
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "files.trimTrailingWhitespace": true,
+  "editor.rulers": [
+    120
+  ],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.cache-loader": true,
+    "**/.DS_Store": true,
+    "**/*.js.map": true,
+    "**/ws_build": true,
+    "**/dist": true,
+    "**/*.js": {
+      "when": "$(basename).ts"
+    },
+    "**/node_modules": true,
+    "**/.docker": true,
+    "**/reports": true
+  },
+  "search.exclude": {
+    "**/.git": true,
+    "**/node_modules": false,
+    "**/.cache-loader": true,
+    "**/bower_components": true,
+    "**/jspm_packages": true,
+    "**/ws_build": true,
+    "**/dist": true,
+    "**/aot": true,
+    "**/.idea": true,
+    "src/assets/**": true
+  },
+  "editor.renderIndentGuides": true,
+  "explorer.openEditors.visible": 0,
+  "window.zoomLevel": 0,
+  "files.insertFinalNewline": true,
+  "html.autoClosingTags": false,
+  "telemetry.enableTelemetry": false,
+  "javascript.preferences.quoteStyle": "single",
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "html.format.wrapAttributes": "force-aligned",
+  "search.useGlobalIgnoreFiles": true,
+  "workbench.iconTheme": "seti",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "breadcrumbs.enabled": false,
+  "workbench.tree.renderIndentGuides": "always",
+  "typescript.preferences.quoteStyle": "single",
+  "workbench.colorCustomizations": {
+    // "statusBar.background": "#007acc" // blue
+    // "statusBar.background": "#008871" // green
+    // "statusBar.background": "#830088" // purple
+  },
+  "workbench.editor.highlightModifiedTabs": true,
+  "window.title": "${rootName}${separator}${activeEditorShort}${separator}Visual Studio Code"
+}
