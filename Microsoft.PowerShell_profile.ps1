@@ -38,6 +38,12 @@ Copy Function:TabExpansion2 Function:OriginalTabExpansion
 function TabExpansion([string] $line, [string] $lastword) {
   if ($line -eq 'cd ..') {
     return '..\'
+  } elseif ($line -eq 'cd ..\..') {
+    return '..\..\'
+  } elseif ($line -eq 'cd ..\..\..') {
+    return '..\..\..\'
+  } elseif ($line -eq 'cd ..\..\..\..') {
+    return '..\..\..\..\'
   } else {
    OriginalTabExpansion $line $lastword | Out-Host
   }
