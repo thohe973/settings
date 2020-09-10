@@ -1,3 +1,8 @@
+# Create profile file
+# > New-Item -path $profile -type file -force
+# Set execution policy
+# > Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+
 function Write-BranchName () {
   try {
     $branch = git symbolic-ref --short -q HEAD
