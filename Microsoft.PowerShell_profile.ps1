@@ -3,6 +3,8 @@
 # Set execution policy
 # > Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 
+Set-PSReadlineKeyHandler -Key Tab -Function Complete
+
 function Write-BranchName () {
   try {
     $branch = git symbolic-ref --short -q HEAD
@@ -38,17 +40,21 @@ function prompt {
   return " "
 }
 
-# Autocomplete 'cd ..' to 'cd ..\' when tabbing
+# Autocomplete '..' to '..\' when tabbing
 Copy Function:TabExpansion2 Function:OriginalTabExpansion
 function TabExpansion([string] $line, [string] $lastword) {
-  if ($line -eq 'cd ..') {
-    return '..\'
-  } elseif ($line -eq 'cd ..\..') {
-    return '..\..\'
-  } elseif ($line -eq 'cd ..\..\..') {
-    return '..\..\..\'
-  } elseif ($line -eq 'cd ..\..\..\..') {
+  if ($line.EndsWith('..\..\..\..\..\..')) {
+    return '..\..\..\..\..\'
+  } elseif ($line.EndsWith('..\..\..\..\..')) {
+    return '..\..\..\..\..\'
+  } elseif ($line.EndsWith('..\..\..\..')) {
     return '..\..\..\..\'
+  } elseif ($line.EndsWith('..\..\..')) {
+    return '..\..\..\'
+  } elseif ($line.EndsWith('..\..')) {
+    return '..\..\'
+  } elseif ($line.EndsWith('..')) {
+    return '..\'
   } else {
    OriginalTabExpansion $line $lastword | Out-Host
   }
