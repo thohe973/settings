@@ -44,7 +44,7 @@ function prompt {
 Copy Function:TabExpansion2 Function:OriginalTabExpansion
 function TabExpansion([string] $line, [string] $lastword) {
   if ($line.EndsWith('..\..\..\..\..\..')) {
-    return '..\..\..\..\..\'
+    return '..\..\..\..\..\..\'
   } elseif ($line.EndsWith('..\..\..\..\..')) {
     return '..\..\..\..\..\'
   } elseif ($line.EndsWith('..\..\..\..')) {
