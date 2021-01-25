@@ -59,5 +59,10 @@
     // "statusBar.background": "#830088" // purple
   },
   "workbench.editor.highlightModifiedTabs": true,
-  "window.title": "${rootName}${separator}${activeEditorShort}${separator}Visual Studio Code"
+  "window.title": "${rootName}${separator}${activeEditorShort}${separator}Visual Studio Code",
+  "editor.stickyTabStops": true,
+  "telemetry.enableCrashReporter": false,
+  "breadcrumbs.enabled": false,
+  "explorer.compactFolders": false,
+  "window.newWindowDimensions": "maximized"
 }
