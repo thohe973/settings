@@ -44,7 +44,7 @@ function prompt {
 Copy Function:TabExpansion2 Function:OriginalTabExpansion
 function TabExpansion([string] $line, [string] $lastword) {
   if ($lastword.EndsWith('..')) {
-	return $lastword + '\'
+    return $lastword + '\'
   } else {
     OriginalTabExpansion $line $lastword | Out-Host
   }
