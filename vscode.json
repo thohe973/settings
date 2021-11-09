@@ -64,5 +64,6 @@
   "telemetry.enableCrashReporter": false,
   "breadcrumbs.enabled": false,
   "explorer.compactFolders": false,
-  "window.newWindowDimensions": "maximized"
+  "window.newWindowDimensions": "maximized",
+  "gitlens.blame.ignoreWhitespace": true,
 }
