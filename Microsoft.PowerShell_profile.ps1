@@ -43,19 +43,9 @@ function prompt {
 # Autocomplete '..' to '..\' when tabbing
 Copy Function:TabExpansion2 Function:OriginalTabExpansion
 function TabExpansion([string] $line, [string] $lastword) {
-  if ($line.EndsWith('..\..\..\..\..\..')) {
-    return '..\..\..\..\..\..\'
-  } elseif ($line.EndsWith('..\..\..\..\..')) {
-    return '..\..\..\..\..\'
-  } elseif ($line.EndsWith('..\..\..\..')) {
-    return '..\..\..\..\'
-  } elseif ($line.EndsWith('..\..\..')) {
-    return '..\..\..\'
-  } elseif ($line.EndsWith('..\..')) {
-    return '..\..\'
-  } elseif ($line.EndsWith('..')) {
-    return '..\'
+  if ($lastword.EndsWith('..')) {
+	return $lastword + '\'
   } else {
-   OriginalTabExpansion $line $lastword | Out-Host
+    OriginalTabExpansion $line $lastword | Out-Host
   }
 }
