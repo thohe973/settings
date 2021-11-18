@@ -49,3 +49,21 @@ function TabExpansion([string] $line, [string] $lastword) {
     OriginalTabExpansion $line $lastword | Out-Host
   }
 }
+
+# Split into 3 panes and cd to path (windows terminal)
+function cd3([string] $path) {
+  wt -w 0 split-pane -d $path
+  wt -w 0 split-pane -d $path
+  wt -w 0 mf left
+  cd $path
+}
+
+# Split into 4 panes and cd to path (windows terminal)
+function cd4([string] $path) {
+  wt -w 0 split-pane -d $path
+  wt -w 0 split-pane -d $path
+  wt -w 0 mf left
+  wt -w 0 split-pane -d $path
+  cd $path
+}
+
