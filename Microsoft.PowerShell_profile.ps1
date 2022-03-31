@@ -24,6 +24,7 @@ function Write-BranchName () {
 
 # Add git branch to prompt
 function prompt {
+  $Host.UI.RawUI.WindowTitle = "$pwd".replace('C:\git\','')
   $base = ""
   $path = "$($executionContext.SessionState.Path.CurrentLocation)"
 
