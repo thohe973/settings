@@ -31,11 +31,11 @@ function prompt {
   if (Test-Path .git) {
     Write-Host $path -NoNewline -ForegroundColor "blue"
     Write-BranchName
-    Write-Host ">" -NoNewline -ForegroundColor "blue"
+    Write-Host "`r`n>" -NoNewline -ForegroundColor "blue"
   }
   else {
     Write-Host $path -NoNewline -ForegroundColor "blue"
-    Write-Host ">" -NoNewline -ForegroundColor "blue"
+    Write-Host "`r`n>" -NoNewline -ForegroundColor "blue"
   }
 
   return " "
