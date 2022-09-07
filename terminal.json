@@ -118,6 +118,10 @@
         "splitMode": "duplicate"
       },
       "keys": "ctrl+shift+t"
+    },
+    {
+      "command": "commandPalette",
+      "keys": "f1"
     }
   ]
 }
