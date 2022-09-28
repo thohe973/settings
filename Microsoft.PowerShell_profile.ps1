@@ -51,3 +51,5 @@ function TabExpansion([string] $line, [string] $lastword) {
   }
 }
 
+# Fast node manager
+# fnm env --use-on-cd | Out-String | Invoke-Expression
