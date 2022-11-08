@@ -65,5 +65,10 @@
   "breadcrumbs.enabled": false,
   "explorer.compactFolders": false,
   "window.newWindowDimensions": "maximized",
-  "gitlens.blame.ignoreWhitespace": true,
+  "gitlens.blame.ignoreWhitespace": true,  
+  "files.refactoring.autoSave": false,  
+  "editor.matchBrackets": "never",
+  "scm.diffDecorationsGutterPattern": {
+    "modified": false
+  },
 }
