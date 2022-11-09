@@ -1,0 +1,33 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "ctrl+shift+d",
+    "command": "workbench.action.files.saveAs"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "-workbench.action.files.saveAs"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "saveAll"
+  },
+  {
+    "key": "ctrl+k s",
+    "command": "-saveAll"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "workbench.action.files.saveFiles"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "actions.find",
+    "when": "editorIsOpen"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "-actions.find",
+    "when": "editorFocus || editorIsOpen"
+  }
+]
