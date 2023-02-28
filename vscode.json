@@ -71,4 +71,7 @@
   "scm.diffDecorationsGutterPattern": {
     "modified": false
   },
+  "editor.snippetSuggestions": "bottom",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.matchBrackets": "near"
 }
