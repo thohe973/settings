@@ -72,5 +72,6 @@
     "modified": false
   },
   "editor.suggest.snippetsPreventQuickSuggestions": false,
-  "editor.matchBrackets": "near"
+  "editor.matchBrackets": "near",  
+  "gitlens.hovers.enabled": false,
 }
