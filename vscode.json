@@ -75,4 +75,5 @@
   "editor.matchBrackets": "near",  
   "gitlens.hovers.enabled": false,
   "workbench.colorTheme": "Default Dark+",
+  "window.commandCenter": false,
 }
