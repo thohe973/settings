@@ -44,6 +44,9 @@
   "javascript.preferences.quoteStyle": "single",
   "gitlens.codeLens.recentChange.enabled": false,
   "gitlens.codeLens.authors.enabled": false,
+  "gitlens.remotes": [
+    // { "domain": "domain-name.com", "type": "BitbucketServer" }
+  ],
   "gitlens.currentLine.enabled": false,
   "html.format.wrapAttributes": "force-aligned",
   "search.useGlobalIgnoreFiles": true,
@@ -76,4 +79,6 @@
   "gitlens.hovers.enabled": false,
   "workbench.colorTheme": "Default Dark+",
   "window.commandCenter": false,
+  "gitlens.ai.experimental.generateCommitMessage.enabled": false,
+  "editor.stickyScroll.enabled": false,
 }
