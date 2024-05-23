@@ -81,4 +81,6 @@
   "window.commandCenter": false,
   "gitlens.ai.experimental.generateCommitMessage.enabled": false,
   "editor.stickyScroll.enabled": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "gitlens.launchpad.indicator.enabled": false,
 }
