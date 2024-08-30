@@ -3,6 +3,9 @@
 # Set execution policy
 # > Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 
+# Reload profile
+# . $PROFILE
+
 Set-PSReadlineKeyHandler -Key Tab -Function Complete
 
 function Write-BranchName () {
@@ -53,3 +56,27 @@ function TabExpansion([string] $line, [string] $lastword) {
 
 # Fast node manager
 # fnm env --use-on-cd | Out-String | Invoke-Expression
+
+function gitStatus { git status }
+Set-Alias gs gitStatus
+
+del alias:gl -Force
+function gitPull { git pull }
+Set-Alias gl gitPull
+
+del alias:gp -Force
+function gitPush { git push }
+Set-Alias gp gitPush
+
+function gitCheckout { git checkout $args }
+Set-Alias gco gitCheckout
+
+function gitAddCommit { 
+	git add -A
+    git commit -m "$args"
+}
+Set-Alias gac gitAddCommit
+
+del alias:gc -Force
+function gitCommit { git commit -m "$args" }
+Set-Alias gc gitCommit
