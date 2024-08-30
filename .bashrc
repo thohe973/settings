@@ -158,6 +158,20 @@ alias ....='cd ../../../../'
 alias .....='cd ../../../../'
 alias cls='clear'
 
+alias gs='git status'
+alias gp='git push'
+alias gl='git pull'
+function gac() {
+  git add -A
+  git commit -m "$*"
+}
+function gc() {
+  git commit -m "$*"
+}
+function gco() {
+  git checkout "$*"
+}
+
 # pnpm
 export PNPM_HOME="/home/thhe/.local/share/pnpm"
 case ":$PATH:" in
