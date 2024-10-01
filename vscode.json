@@ -83,5 +83,6 @@
   "editor.stickyScroll.enabled": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "gitlens.launchpad.indicator.enabled": false,
-  "scm.showHistoryGraph": false
+  "scm.showHistoryGraph": false,
+  "gitlens.hovers.enabled": false
 }
