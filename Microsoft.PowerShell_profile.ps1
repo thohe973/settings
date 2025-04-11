@@ -71,9 +71,11 @@ Set-Alias gp gitPush
 function gitCheckout { git checkout $args }
 Set-Alias gco gitCheckout
 
-function gitAddCommit { 
-	git add -A
-    git commit -m "$args"
+function gitAddCommit {
+    $commandLine = $MyInvocation.Line
+    $message = $commandLine -replace '^gac\s+', ''
+    git add -A
+    git commit -m "$message"
 }
 Set-Alias gac gitAddCommit
 
