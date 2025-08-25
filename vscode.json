@@ -85,4 +85,8 @@
   "gitlens.launchpad.indicator.enabled": false,
   "scm.showHistoryGraph": false,
   "gitlens.hovers.enabled": false
+  "gitlens.advanced.messages": {
+    "suppressLineUncommittedWarning": true
+  },
+  "problems.decorations.enabled": false,
 }
