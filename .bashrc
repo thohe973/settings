@@ -118,7 +118,7 @@ fi
 
 # fnm
 export PATH="/home/thhe/.local/share/fnm:$PATH"
-eval "`fnm env`"
+eval "$(fnm env --use-on-cd --shell bash)"
 
 # start dir
 cd git
