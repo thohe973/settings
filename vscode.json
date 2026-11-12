@@ -89,4 +89,9 @@
     "suppressLineUncommittedWarning": true
   },
   "problems.decorations.enabled": false,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "git.blame.ignoreWhitespace": true,
+  "explorer.compactFolders": false,
+  "window.density.layout": "compact",
+  "workbench.experimental.modernUI": false,
 }
